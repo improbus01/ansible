@@ -2,6 +2,12 @@
 - hosts: 192.168.178.21
 
   tasks:
+    - name: updates
+      win_updates:
+        category_names:
+          - SecurityUpdates
+          - CriticalUpdates
+          
     - name: systeminfo
       win_command: systeminfo
       register: systeminfo_cmd
