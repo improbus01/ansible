@@ -9,7 +9,7 @@
     - name: Install git from specified repository
       win_chocolatey:
         name: git
-        source: https://someserver/api/v2/
+        source: https://chocolatey.org/api/v2
       
     - debug:
         msg: '{{systeminfo_cmd.stdout_lines}}'
