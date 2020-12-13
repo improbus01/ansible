@@ -10,6 +10,11 @@
       win_chocolatey:
         name: git
         source: https://chocolatey.org/api/v2
+        
+    - name: Upgrade installed packages
+      win_chocolatey:
+        name: all
+        state: latest
       
     - debug:
         msg: '{{systeminfo_cmd.stdout_lines}}'
