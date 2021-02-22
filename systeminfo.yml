@@ -1,5 +1,5 @@
 ---
-- hosts: 192.168.178.22
+- hosts: 192.168.43.237
   tasks:
     - name: updates
       win_updates:
